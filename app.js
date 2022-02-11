@@ -140,5 +140,5 @@ function averageBits(resArray) {
     return (totalBits / count).toFixed(2);
 }
 
-const port = Process.env.PORT || 2000
+const port = process.env.PORT || 2000
 app.listen(port, () => console.log('Port active at 2000'))
