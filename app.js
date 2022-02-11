@@ -139,4 +139,6 @@ function averageBits(resArray) {
         count += resArray[i].frequency;
     return (totalBits / count).toFixed(2);
 }
-app.listen('2000', () => console.log('Port active at 2000'))
+
+const port = Process.env.PORT || 2000
+app.listen(port, () => console.log('Port active at 2000'))
